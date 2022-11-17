@@ -711,6 +711,7 @@ q {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+
 }
 
 h2 {
@@ -786,7 +787,7 @@ h4 {
 }
 
 .tc-white {
-    color: #000000!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
