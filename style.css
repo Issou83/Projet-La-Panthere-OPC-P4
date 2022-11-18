@@ -509,6 +509,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    margin: 5px 0px 5px 0px
 }
 
 .scrollToTop {
@@ -653,6 +654,14 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+fieldset {
+    border: none;
+}
+ 
+input {
+    font-size: 18px;
 }
 
 .container {
