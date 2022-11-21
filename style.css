@@ -1,7 +1,8 @@
+
 body {
     margin: 0;
     padding: 0;
-    font-size: 0;
+    font-size: 18px;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -54,6 +55,7 @@ a:hover {
 }
 
 .bloc-sm {
+    width: 100%;
     padding: 20px 50px;
 }
 
@@ -291,6 +293,7 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+
 }
 
 .navbar-brand {
@@ -338,11 +341,6 @@ a:hover {
     background: transparent;
 }
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
 .navbar-toggle:hover {
     background: transparent!important;
 }
@@ -352,17 +350,19 @@ a:hover {
     width: 26px;
 }
 
-.nav-invert .navbar .nav {
-    float: left;
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-    float: right;
-    position: relative;
-    z-index: 2;
-}
+.link-home {
+    display: flex;
+    align-items: center;
 
+}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -512,6 +512,15 @@ button {
     margin: 5px 0px 5px 0px
 }
 
+ .form-group {
+    margin: 10px 0 10px 0;
+ }
+
+.legend-big {
+    font-size: 30px;
+    color: #000000;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -652,20 +661,24 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
+}
+
+label {
+    font-size: 22px;
 }
 
 fieldset {
     border: none;
+    padding: 0;
 }
  
-input {
+input, textarea {
     font-size: 18px;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .hero-bloc-text {
@@ -687,8 +700,7 @@ input {
 }
 
 p {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -725,14 +737,16 @@ q {
 
 h2 {
     font-size: 24px;
-    line-height: 1.4em;
+    font-weight: 600;
+    line-height: 1.2em;
 }
 
 h3 {
     font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .med-width-whitespace {
@@ -846,6 +860,15 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+.bloc-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer > ul {
+    margin: 0 30px 0 30px;
+
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -910,11 +933,28 @@ h4 {
     }
 }
 
+.bloc-list {
+    list-style-type: none;
+    text-align: center;
+    flex-wrap: wrap;
+}
+ ul {
+    list-style-type: none;
+    padding: 0;
+}
+.list {
+    padding: 0 30px;
+}
 @media (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+
     h1,
     h2,
     h3,
@@ -925,6 +965,7 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1061,3 +1102,4 @@ h4 {
         text-align: center;
     }
 }
+
