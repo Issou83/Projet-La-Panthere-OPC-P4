@@ -64,7 +64,6 @@ a .btn:focus {
 }
 
 .bloc-sm {
-    width: 100%;
     padding: 20px 50px;
 }
 
@@ -359,19 +358,6 @@ a .btn:focus {
     width: 26px;
 }
 
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.link-home {
-    display: flex;
-    align-items: center;
-
-}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
