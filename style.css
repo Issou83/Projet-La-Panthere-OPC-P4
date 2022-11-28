@@ -20,7 +20,8 @@ a:hover {
     cursor: pointer;
 }
 
-a:focus {
+a:focus,
+.btn:focus   {
  border: 1px solid black;
 }
 
