@@ -502,7 +502,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0);
     box-shadow: none;
     margin: 5px 0px 5px 0px
 }
